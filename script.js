@@ -13,4 +13,4 @@ function makeRows(input) {
   }
 }
 
-makeRows(6);
+makeRows(10);

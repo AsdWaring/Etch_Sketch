@@ -8,17 +8,33 @@
     --grid-rows: 1;
   }
   
+  #outerbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    border: black solid 8px;
+    height: 650px;
+    width: 650px;
+    background-color: purple;
+  }
   #container {
-    height: 500px;
-    width: 500px;
-    display: inline-grid;
-    grid-gap: 1rm;
+    display: grid;
+    justify-content: center;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
+    width: 500px;
+    height: 500px;
   }
   
   .grid-item {
-    padding: 1em;
+    max-height: 100%;
+    max-width: 100%;
+    display:flex;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 2em;
     border: 1px solid #ddd;
     align-self: center;
     
