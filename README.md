@@ -8,3 +8,23 @@ It's like learning how to create a button that initiates a function all over aga
 I literally had to break the entire code down step by step so I understood how it worked together.
 
 I am really enjoying this, don't let my comments towards a struggle imply that I don't see that struggle as an oppertunity for growth.
+
+----AUGUST 9th! AGAIN!!!
+
+Well - breaking it down I now understand what a CSS variable is, and how javascript can be used to changed the value of that variable.
+
+Which is an essential peice of knowledge I was missing.
+
+it goes like THIS!
+
+SET CSS VARIABLE
+
+:root {
+--CSSVARIABLE: Value1;
+}
+
+Javascript
+
+container.style.setPorperty("--CSSVARIABLE", NEWVALUE)
+
+--CSSVARIABLE has now changed from Value1 to NEWVALUE.
