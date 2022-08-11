@@ -4,7 +4,7 @@
 
 const container = document.getElementById("container");
 const outerbox = document.getElementById("outerbox");
-const gridItem = document.getElementById("gridItem");
+const gridItem = document.getElementsByClassName("gridItem");
 
 function makeRows(input) {
   container.style.setProperty("--grid-rows", input);
@@ -22,8 +22,8 @@ makeRows(100);
 //there are no errors on it
 //it should change the color of the griditem to white
 
-container.addEventListener("mouseover", function (e) {
+/*gridItem.addEventListener("mouseover", function (e) {
   if (e.target.matches("gridItem")) {
-    gridItem.style.backgroundColor = "--gridcolor";
+    gridItem.style.backgroundColor = "--grid-color";
   }
-});
+});*/

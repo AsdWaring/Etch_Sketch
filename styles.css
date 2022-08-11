@@ -3,6 +3,9 @@
     background-color:   #b6c48e;
 }
 
+h1 {
+  text-align: center;
+}
 :root {
     --grid-cols: 1;
     --grid-rows: 1;
