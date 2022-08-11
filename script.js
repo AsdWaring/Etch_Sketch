@@ -22,8 +22,6 @@ makeRows(100);
 //there are no errors on it
 //it should change the color of the griditem to white
 
-/*gridItem.addEventListener("mouseover", function (e) {
-  if (e.target.matches("gridItem")) {
-    gridItem.style.backgroundColor = "--grid-color";
-  }
-});*/
+container.addEventListener("mouseover", (e) => {
+  gridItem.style.backgroundColor = "white";
+});
