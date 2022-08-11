@@ -36,3 +36,17 @@ Well don't use 1em for you grid-item and all will be good.
 Thanks stack overflow.
 
 ---- I am currently working on how to effectivly have the griditem change color. I have the mouseover function mostly built but I must have a flaw.
+
+August 11th! (It's morning and I got to go to work - and all I want to do is code instead!)
+
+Notes from Javscript file:
+
+figured out that the problem may be the creation of grid item
+in the makeRows function. The error "listener event is not a function"
+indicates that either the element that I am trying add the listener event
+doesn't exist yet (the code for the listener event initiates before the
+gridItems are created). If I create a function with an IF statement and
+have the eventlistener only initiate IF the gridItems have populated it might
+solve the problem.
+
+----- Yeah so I'll be working on this when I'm back.
