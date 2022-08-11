@@ -28,3 +28,11 @@ Javascript
 container.style.setPorperty("--CSSVARIABLE", NEWVALUE)
 
 --CSSVARIABLE has now changed from Value1 to NEWVALUE.
+
+August 10th!
+
+Well don't use 1em for you grid-item and all will be good.
+
+Thanks stack overflow.
+
+---- I am currently working on how to effectivly have the griditem change color. I have the mouseover function mostly built but I must have a flaw.
