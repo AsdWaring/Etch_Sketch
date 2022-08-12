@@ -42,11 +42,18 @@ August 11th! (It's morning and I got to go to work - and all I want to do is cod
 Notes from Javscript file:
 
 figured out that the problem may be the creation of grid item
-in the makeRows function. The error "listener event is not a function"
-indicates that either the element that I am trying add the listener event
-doesn't exist yet (the code for the listener event initiates before the
-gridItems are created). If I create a function with an IF statement and
-have the eventlistener only initiate IF the gridItems have populated it might
-solve the problem.
+in the makeRows function. The error "listener event is not a function" indicates that either the element that I am trying add the listener event doesn't exist yet (the code for the listener event initiates before the gridItems are created). If I create a function with an IF statement and have the eventlistener only initiate IF the gridItems have populated it might solve the problem.
 
 ----- Yeah so I'll be working on this when I'm back.
+
+----- okay so this evening I got no where
+
+I have been tryting to solve the tracking and color change issue for an hour now and I think it might actually be that I need to create it as a loop to select all the elements for the addeventlistner. Which from what I have read cannot be assigned to multiple elements.
+
+This does make sense since when I browsed other code for this project I remember seeing a loop - but I assumed that loop had to do with the creation of the grid.
+
+SO tomorrow is a new day. I will be happy when I have overcome this problem - it certainly does stretch the mind and make me do a lot of research on the subject.
+
+I refuse to post on discord for the answer, but I will be browsing for similiar issues that other students have encountered.
+
+Time to push to Git and take a brain break.

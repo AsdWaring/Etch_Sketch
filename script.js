@@ -4,7 +4,7 @@
 
 const container = document.getElementById("container");
 const outerbox = document.getElementById("outerbox");
-const pixel = document.getElementsByClassName("gridItem");
+const gridItem = document.getElementsByName("gridItem");
 
 function makeRows(input) {
   container.style.setProperty("--grid-rows", input);
@@ -13,9 +13,17 @@ function makeRows(input) {
     let cell = document.createElement("div");
     container.appendChild(cell).className = "gridItem";
   }
-}
 
-makeRows(100);
+  if (input > 2) {
+    let pixel = document.querySelectorAll("div");
+    pixel.forEach((pixel) => {
+      pixel.addEventListener("mouseover", (event) => {
+        event.target.styles.backgroundColor = "white";
+      });
+    });
+  }
+}
+makeRows(30);
 
 /*figured out that the problem may be the creation of grid item
 in the makeRows function. The error "listener event is not a function"
@@ -25,14 +33,19 @@ gridItems are created). If I create a function with an IF statement and
 have the eventlistener only initate IF the gridItems have populated it might
 solve the problem*/
 
-// I need to work on the piece of code below
-//I am not sure what is wrong with it as of yet
-//it should change the color of the griditem to white
+/* The above is wrong - you cannot use an addEventListener to multiple
+elements. I believe I have to create a loop for this to work see below *?
 
-//bad code still working on solution
+//I will be reading discord for awhile tonight to see if 
+//anyone has come across simliar issues
+// I really think I'm missing a general concept somewhere.
 
-/*
-pixel.addEventListener("mouseover", (event) => {
-  event.target.style.color = "white";
-  return;
-});*/
+
+//The "getElementsByClassName" method returns an element collection, but the "addEventListener" method is only available on an individual element.
+
+/*var i =0;
+while (i<number_of_elements) {
+  document.getElementsByClassName('your_class_name')[i].style.backgroundColor= 'red';
+  //selecting each class and changing it's backgroundcolor
+  i++;
+} */
