@@ -69,3 +69,13 @@ instead of pixel.style.backgroundColor = white.
 Thank you random discord Odin Student for posting your code. I was so close to the solution, I just had been googling chaning the style rather than googling changing the attribute.
 
 Sometimes its as easy as not understanding the language you should use to pose the question.
+
+Looking at my previous notes I think I can use this logic to change the color variable for the pixels.
+
+I already have --grid-color as a css variable in my :root
+
+--CSSVARIABLE = Value1
+
+container.style.setPorperty("--CSSVARIABLE", NEWVALUE)
+
+--CSSVARIABLE has now changed from Value1 to NEWVALUE.
