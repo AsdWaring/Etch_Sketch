@@ -57,3 +57,15 @@ SO tomorrow is a new day. I will be happy when I have overcome this problem - it
 I refuse to post on discord for the answer, but I will be browsing for similiar issues that other students have encountered.
 
 Time to push to Git and take a brain break.
+
+August 12th!
+
+Oh joy and happineness and success! So I was wrong. Above about the loop - i did have to use a for each statement, because I was indicating multiple elements with my query selector. So I was on the right track what I did differently was use:
+
+pixel.setAttribute("style", "background-color: white;")
+
+instead of pixel.style.backgroundColor = white.
+
+Thank you random discord Odin Student for posting your code. I was so close to the solution, I just had been googling chaning the style rather than googling changing the attribute.
+
+Sometimes its as easy as not understanding the language you should use to pose the question.
