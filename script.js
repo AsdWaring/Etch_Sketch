@@ -18,9 +18,9 @@ function makeRows(input) {
     let pixels = document.querySelectorAll(".gridItem");
     pixels.forEach((pixel) => {
       pixel.addEventListener("mouseover", () => {
-        pixel.setAttribute("style", "background-color: white;");
+        pixel.setAttribute("style", "background-color: fuchsia;");
       });
     });
   }
 }
-makeRows(100);
+makeRows(85);

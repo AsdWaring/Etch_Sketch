@@ -3,20 +3,43 @@
     background-color:   #b6c48e;
 }
 
+#nav {
+  display:flex;
+  justify-content: space-between;
+  margin: 20px 50px 20px 50px;
+}
+
+.colorchange {
+  height: 50px;
+  width: 200px;
+  border: black solid 2px;
+  text-align: center;
+  background-color: #dc7027;
+
+ 
+}
+
+#reset {
+  height: 30px;
+  width: 80px;
+  background-color: #dc7027;
+ 
+  
+}
+
 h1 {
   text-align: center;
 }
 :root {
     --grid-cols: 1;
     --grid-rows: 1;
-    --grid-color: white;
+    --grid-color: fuchsia ;
   }
   
   #outerbox {
     display: flex;
     align-items: center;
-    justify-content: center;
-   
+    justify-content: space-around;
     border: black solid 2px;
     height: 650px;
     width: 650px;
