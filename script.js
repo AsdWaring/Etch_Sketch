@@ -5,6 +5,10 @@
 const container = document.getElementById("container");
 const outerbox = document.getElementById("outerbox");
 const gridItem = document.getElementsByName("gridItem");
+const reset = document.getElementById("reset");
+const colorchange = document.getElementById("colorchange");
+const gridsize = document.getElementById("gridsize");
+let SIZE = 16;
 
 function makeRows(input) {
   container.style.setProperty("--grid-rows", input);
@@ -13,14 +17,39 @@ function makeRows(input) {
     let cell = document.createElement("div");
     container.appendChild(cell).className = "gridItem";
   }
-
   if (input > 2) {
     let pixels = document.querySelectorAll(".gridItem");
     pixels.forEach((pixel) => {
       pixel.addEventListener("mouseover", () => {
-        pixel.setAttribute("style", "background-color: fuchsia;");
+        pixel.setAttribute("style", "background-color: cadetblue;");
       });
     });
   }
 }
-makeRows(85);
+reset.addEventListener("click", () => {
+  let pixels = document.querySelectorAll(".gridItem");
+  pixels.forEach((pixel) => {
+    pixel.setAttribute("style", "background-color: black");
+  });
+});
+
+function RESETGRID() {
+  let pixels = document.querySelectorAll(".gridItem");
+  pixels.forEach((pixel) => {
+    pixel.setAttribute("style", "background-color: black");
+  });
+}
+
+gridsize.addEventListener("click", () => {
+  let SIZE = Number(
+    prompt("How Big do You Want it? Type Number Between 2-100!")
+  );
+  if (SIZE < 2 || SIZE > 100) {
+    alert("Try Again");
+  }
+  if (SIZE >= 2 && SIZE <= 100) {
+    RESETGRID();
+    makeRows(SIZE);
+  }
+});
+makeRows(SIZE);
