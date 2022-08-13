@@ -26,19 +26,15 @@ function makeRows(input) {
     });
   }
 }
-reset.addEventListener("click", () => {
-  let pixels = document.querySelectorAll(".gridItem");
-  pixels.forEach((pixel) => {
-    pixel.setAttribute("style", "background-color: black");
-  });
-});
-
 function RESETGRID() {
   let pixels = document.querySelectorAll(".gridItem");
   pixels.forEach((pixel) => {
     pixel.setAttribute("style", "background-color: black");
   });
 }
+reset.addEventListener("click", () => {
+  RESETGRID();
+});
 
 gridsize.addEventListener("click", () => {
   let SIZE = Number(

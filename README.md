@@ -79,3 +79,9 @@ I already have --grid-color as a css variable in my :root
 container.style.setPorperty("--CSSVARIABLE", NEWVALUE)
 
 --CSSVARIABLE has now changed from Value1 to NEWVALUE.
+
+AUGUST 13th!
+
+Okay. So creating the reset button and the Change Grid Size button was intuitive when I went to do it today.
+
+I still need to add the ability to change the color of the mouseover. I'm thinking choosing three or four options for gird color to choose from (including black)
