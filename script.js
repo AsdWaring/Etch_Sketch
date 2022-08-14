@@ -9,7 +9,45 @@ const reset = document.getElementById("reset");
 const colorchange = document.getElementById("colorchange");
 const gridsize = document.getElementById("gridsize");
 let SIZE = 16;
+const red = document.getElementById("red");
+const blue = document.getElementById("blue");
+const green = document.getElementById("green");
+const erase = document.getElementById("erase");
 
+red.addEventListener("click", () => {
+  let pixels = document.querySelectorAll(".gridItem");
+  pixels.forEach((pixel) => {
+    pixel.addEventListener("mouseover", () => {
+      pixel.setAttribute("style", "background-color: rgba(255, 0, 0, 0.644);");
+    });
+  });
+});
+
+blue.addEventListener("click", () => {
+  let pixels = document.querySelectorAll(".gridItem");
+  pixels.forEach((pixel) => {
+    pixel.addEventListener("mouseover", () => {
+      pixel.setAttribute("style", "background-color: rgba(0, 0, 255, 0.568)");
+    });
+  });
+});
+
+green.addEventListener("click", () => {
+  let pixels = document.querySelectorAll(".gridItem");
+  pixels.forEach((pixel) => {
+    pixel.addEventListener("mouseover", () => {
+      pixel.setAttribute("style", "background-color: rgba(0, 128, 0, 0.692)");
+    });
+  });
+});
+erase.addEventListener("click", () => {
+  let pixels = document.querySelectorAll(".gridItem");
+  pixels.forEach((pixel) => {
+    pixel.addEventListener("mouseover", () => {
+      pixel.setAttribute("style", "background-color: black;");
+    });
+  });
+});
 function makeRows(input) {
   container.style.setProperty("--grid-rows", input);
   container.style.setProperty("--grid-cols", input);
@@ -21,7 +59,7 @@ function makeRows(input) {
     let pixels = document.querySelectorAll(".gridItem");
     pixels.forEach((pixel) => {
       pixel.addEventListener("mouseover", () => {
-        pixel.setAttribute("style", "background-color: cadetblue;");
+        pixel.setAttribute("style", "background-color: rgba(0, 128, 0, 0.692");
       });
     });
   }

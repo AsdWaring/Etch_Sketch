@@ -1,5 +1,15 @@
 # Etch_Sketch
 
+Overview!
+
+Hello! Yes this isn't your typical readme, basically I've decided to use this as a forum to log my progress at addressing the problem.
+
+I started on August 9th and finished August 14th. I learned an exceptional amount working on this.
+
+As always, I could spend the time to make it look prettier. Which I think I will do in the future (functionality has always been a strong point, not so much asthetics, I had to google for a color scheme). I know one should always work on their weaknesses, but I think my plan with that is, to go through ALL my old projects once I'm done to make them prettier as it's own project.
+
+I'm going to give it a couple days and re read my code to see if I can simply it. I really wanted to make the color change buttons into a single piece of code instead of breaking them up into individual addlistner clicks. In my mind it should be possible to combine them all.
+
 August 9th
 Okay I am struggling with understanding how to create a grid in CSS so I looked up some code for me to break apart so I can understand the concepts.
 
@@ -31,7 +41,7 @@ container.style.setPorperty("--CSSVARIABLE", NEWVALUE)
 
 August 10th!
 
-Well don't use 1em for you grid-item and all will be good.
+Well don't use 1em for your grid-item and all will be good.
 
 Thanks stack overflow.
 
@@ -50,8 +60,6 @@ in the makeRows function. The error "listener event is not a function" indicates
 
 I have been tryting to solve the tracking and color change issue for an hour now and I think it might actually be that I need to create it as a loop to select all the elements for the addeventlistner. Which from what I have read cannot be assigned to multiple elements.
 
-This does make sense since when I browsed other code for this project I remember seeing a loop - but I assumed that loop had to do with the creation of the grid.
-
 SO tomorrow is a new day. I will be happy when I have overcome this problem - it certainly does stretch the mind and make me do a lot of research on the subject.
 
 I refuse to post on discord for the answer, but I will be browsing for similiar issues that other students have encountered.
@@ -66,22 +74,18 @@ pixel.setAttribute("style", "background-color: white;")
 
 instead of pixel.style.backgroundColor = white.
 
-Thank you random discord Odin Student for posting your code. I was so close to the solution, I just had been googling chaning the style rather than googling changing the attribute.
+Thank you random discord Odin Student for posting your code. I was so close to the solution, I just had been googling changing the style rather than googling changing the attribute.
 
 Sometimes its as easy as not understanding the language you should use to pose the question.
 
 Looking at my previous notes I think I can use this logic to change the color variable for the pixels.
-
-I already have --grid-color as a css variable in my :root
-
---CSSVARIABLE = Value1
-
-container.style.setPorperty("--CSSVARIABLE", NEWVALUE)
-
---CSSVARIABLE has now changed from Value1 to NEWVALUE.
 
 AUGUST 13th!
 
 Okay. So creating the reset button and the Change Grid Size button was intuitive when I went to do it today.
 
 I still need to add the ability to change the color of the mouseover. I'm thinking choosing three or four options for gird color to choose from (including black)
+
+August 14th!
+
+Put in the last buttons! And its done!
